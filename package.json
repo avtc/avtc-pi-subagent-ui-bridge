@@ -1,6 +1,6 @@
 {
   "name": "avtc-pi-subagent-ui-bridge",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Lets extensions' interactive dialogs from nested subagents render in the root session, with the subagent's last message as context, via simple integration.",
   "type": "module",
   "main": "./index.ts",
