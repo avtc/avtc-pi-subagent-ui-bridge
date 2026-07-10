@@ -1,6 +1,6 @@
 # avtc-pi-subagent-ui-bridge
 
-Lightweight IPC bridge that lets pi subagent sessions communicate with the root UI session. Provides a simple, focused API.
+Lets extensions' interactive dialogs from nested subagents render in the root session, with the subagent's last message as context, via simple integration.
 
 ## Features
 
@@ -37,7 +37,7 @@ The bridge works with **any** subagent extension — it is not coupled to a part
 
 For the bridge to work, a subagent extension's **spawning code** (the logic that launches each child pi process) must do three things:
 
-1. **Install this extension** so both the root and every child load it (`pi install git:github.com/avtc/avtc-pi-subagent-ui-bridge`). The root then starts the IPC server automatically.
+1. **Install this extension** so both the root and every child load it (`pi install npm:avtc-pi-subagent-ui-bridge`). The root then starts the IPC server automatically.
 2. **Forward the two discovery env vars** — `PI_SUBAGENT_UI_BRIDGE_ROOT_SOCKET` and `PI_SUBAGENT_UI_BRIDGE_AUTH_TOKEN` — from the parent environment into each child. This happens **for free** when children inherit `process.env`; it must be done **explicitly** only if the launcher rebuilds a clean environment for the child.
 3. **Set `PI_SUBAGENT_CHILD_AGENT`** to the spawned agent's name. This is never automatic — only the launcher knows which agent it is starting — and it is what labels the context shown in the root's UI.
 
@@ -60,7 +60,7 @@ When a subagent (e.g. `worker`) calls `ask_user_question`, the bridge forwards i
 ## Installation
 
 ```bash
-pi install git:github.com/avtc/avtc-pi-subagent-ui-bridge
+pi install npm:avtc-pi-subagent-ui-bridge
 ```
 
 ## Usage

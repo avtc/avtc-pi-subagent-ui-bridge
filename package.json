@@ -1,7 +1,7 @@
 {
   "name": "avtc-pi-subagent-ui-bridge",
   "version": "1.0.1",
-  "description": "Lightweight IPC bridge for subagent UI requests",
+  "description": "Lets extensions' interactive dialogs from nested subagents render in the root session, with the subagent's last message as context, via simple integration.",
   "type": "module",
   "main": "./index.ts",
   "files": [
