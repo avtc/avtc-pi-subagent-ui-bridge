@@ -101,7 +101,11 @@ For the bridge to work, a subagent extension's **spawning code** (the logic that
 
 The `buildUiBridgeEnv` snippet under [Usage](#usage) does exactly steps 2–3.
 
-> Developed with [Z.ai](https://z.ai/subscribe?ic=N5IV4LLOOV) — get 10% off your subscription via this referral link.
+## Full suite
+
+Check out the full suite of related extensions, [avtc-pi](https://github.com/avtc/avtc-pi) — deterministic feature development, subagent delegation, working-memory, behavioral learning, parallel-work guardrails, durable decisions, notifications, and more.
+
+Developed with [Z.ai](https://z.ai/subscribe?ic=N5IV4LLOOV) — get 10% off your subscription via this referral link.
 
 ## License
 
