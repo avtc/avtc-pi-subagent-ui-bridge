@@ -1,6 +1,6 @@
 {
   "name": "avtc-pi-subagent-ui-bridge",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Lets extensions' interactive dialogs from nested subagents render in the root session, with the subagent's last message as context, via simple integration.",
   "type": "module",
   "main": "./index.ts",
@@ -32,7 +32,7 @@
     "extensions": [
       "./index.ts"
     ],
-    "image": "https://raw.githubusercontent.com/avtc/avtc-pi-subagent-ui-bridge/main/assets/images/with-preceeding-message.png"
+    "image": "https://raw.githubusercontent.com/avtc/avtc-pi-subagent-ui-bridge/main/assets/images/cover.png"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.0",
